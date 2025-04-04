@@ -22,6 +22,7 @@
   window.addEventListener("message", (event: MessageEvent) => {
     if (event.source !== window || event.data.type !== "TANSTACK_QUERY_STATE") return;
 
+    console.log("payload", event.data.payload);
     chrome.runtime.sendMessage({
       type: "QUERY_STATE_UPDATE",
       payload: event.data.payload,

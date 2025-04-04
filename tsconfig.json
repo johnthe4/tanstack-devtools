@@ -9,6 +9,7 @@
     "lib": ["ES6", "DOM"],
     "outDir": "dist",
     "module": "ESNext",
+    "types": ["chrome"],
     "strict": true
   }
 }
